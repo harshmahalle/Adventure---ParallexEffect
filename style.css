@@ -102,7 +102,67 @@ section {
     background-image: url(sport-3.jpg);
 }
 
-/* Additional Properties */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 0.8rem;
+        padding: 0;
+    }
+
+    #wrapper {
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+    }
+
+    .background {
+        transform: none;
+        height: 200px; /* Adjust as needed */
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .foreground {
+        display: none; /* Hide foreground image on mobile */
+    }
+
+    h1 {
+        font-size: 5rem;
+        top: 2rem;
+        text-align: center;
+    }
+
+    section {
+        padding: 2rem 1rem; /* Adjust as needed */
+    }
+
+    .SecHeading {
+        font-size: 3rem;
+        padding: 0 1rem;
+        text-align: left;
+    }
+
+    .text {
+        font-size: 1rem;
+        padding: 0 1rem;
+        margin: 2rem 0;
+        text-align: left;
+    }
+
+    .bg {
+        height: 300px; /* Adjust as needed */
+        margin-bottom: 2rem;
+    }
+
+    .desc {
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
+    }
+}
+/* Additional Properties 
 
 .container {
     flex-direction: column;
@@ -136,3 +196,4 @@ section {
     border-radius: 5px;
 }
 
+*/
